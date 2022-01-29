@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>Desafio ENCRIPTADOR Oracle ONE</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/9514dd5057.js" crossorigin="anonymous"></script>
+    <!-- CSS Custom -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <nav>
+                <a href=""><img src="assets/images/alura-logo.png" alt="Logo Alura"></a>
+            </nav>
+            <div class="encriptador-container">
+                <div>
+                    <textarea class="encriptador__textarea" name="" id="area" cols="30" rows="10"
+                        placeholder="Ingrese el texto aquí"></textarea>
+                </div>
+                <div class="button-container">
+                    <div class="text-aclaration">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <p>Solo letras minúsculas y sin acentos</p>
+                    </div>
+                    <div class="buttons">
+                        <button id="button-encriptar" class="button-encriptar">Encriptar</button>
+                        <button id="button-desencriptar" class="button-desencriptar">Desencriptar</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="aside-container">
+                <p id="new-text"></p>
+                <img class="character-image" src="assets/images/personaje.png" alt="Personaje con diamente">
+                <h2 class="aside__title">Ningún mensaje fue encontrado</h2>
+                <p class="aside__paragraph">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button id="button-copy" class="button-copy">Copiar</button>
+                <div id="message-copied">
+                    </d>
+                </div>
+            </div>
+    </section>
+    <footer>
+        <p class="footer-paragraph">Creado con 💖 por Enzo Martín Zotti - Contacto:
+            <a href="https://www.linkedin.com/in/enzo-martin-zotti/"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://github.com/tinchoz8426"><i class="fab fa-github-square fa-2x"></i></a>
+        </p>
+    </footer>
+
+    <!-- CDN Sweet Alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
