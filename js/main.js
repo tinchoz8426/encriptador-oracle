@@ -14,7 +14,7 @@ function encriptador() {
     if (/[A-Z]/.test(textArea.value) || /[^A-Za-z0-9_\s]/.test(textArea.value)) {
         Swal.fire({
             position: "top",
-            title: "Recuerda! Sin Mayusculas, ni acentos.",
+            title: "Recuerda! Sin mayúsculas, acentos, ni caracteres especiales.",
             width: "20%",
             icon: "error",
             showConfirmButton: false,
@@ -22,7 +22,7 @@ function encriptador() {
             timer: 3000,
             toast: true,
         })
-        newText.innerHTML = "<p style='text-align: center'>Recuerda! Sin Mayusculas, ni acentos.</p>"
+        newText.innerHTML = "<p style='text-align: center'>Recuerda! Sin mayúsculas, acentos, ni caracteres especiales.</p>"
     }
     else {
         let text = textArea.value;
